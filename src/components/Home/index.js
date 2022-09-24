@@ -2,8 +2,9 @@ import { Link, NavLink, useParams } from "react-router-dom";
 import './Home.css';
 
 const Home = ({ tournaments }) => {
-    const last = tournaments.length-1
-    const recentTourn = tournaments[last];
+    // Finding most recent tournament that isn't upcoming
+    // debugger
+    const recentTourn = tournaments.find(tournament => tournament.recent === true)
     const recentLogoURL = recentTourn.top_eight_img;
     return (
         <div className="home">

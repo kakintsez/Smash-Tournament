@@ -6,19 +6,30 @@ const smashObject = {
     "tournaments": [
         {
             "id": 1,
-            "name": "The First",
-            "date": "April 2nd 2022",
+            "name": "New Beginning",
+            "date": "April 2nd, 2022",
             "entrants": 11,
-            "participants": [
-                1
-            ]
+            "participants": [1,2],
+            "top_eight_img": "",
+            "recent": false
         },
         {
             "id": 2,
             "name": "Uprising",
-            "date": "August 27th 2022",
+            "date": "August 27th, 2022",
             "entrants": 15,
-            "top_eight_img": "https://i.imgur.com/ULt3pkh.png"
+            "participants": [1,2,3],
+            "top_eight_img": "https://i.imgur.com/ULt3pkh.png",
+            "recent": true
+        },
+        {
+            "id": 3,
+            "name": "Casual Party (Upcoming)",
+            "date": "October 15th, 2022",
+            "entrants": 0,
+            "participants": [],
+            "top_eight_img": "",
+            "recent": false
         }
     ],
     "players": [
