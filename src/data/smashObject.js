@@ -10,7 +10,7 @@ const smashObject = {
             "date": "April 2nd, 2022",
             "rank": "B",
             "entrants": 11,
-            "participants": [1,2],
+            "participants": [1,2,4,7,14,15,16,17,18,21,22],
             "top_eight_img": "",
             "recent": false
         },
@@ -42,16 +42,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 1,
             "characters": ["Pikachu", "Pokemon Trainer", "Wolf"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "5th",
+                    "placing": 5,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "1st",
+                    "placing": 1,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -63,16 +63,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 2,
             "characters": ["Link", "Lucina", "Ganondorf"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "1st",
+                    "placing": 1,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "3rd",
+                    "placing": 3,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -84,10 +84,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 3,
             "characters": ["Lucina", "Zero Suit Samus", "Wolf"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "2nd",
+                    "placing": 2,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -99,16 +99,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 4,
             "characters": ["Pyra & Mythra", "Joker", "Shulk"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "2nd",
+                    "placing": 2,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "5th",
+                    "placing": 5,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -120,10 +120,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 5,
             "characters": ["Zelda"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "4th",
+                    "placing": 4,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -135,10 +135,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 6,
             "characters": ["Pikachu", "Lucina"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "5th",
+                    "placing": 5,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -150,16 +150,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 7,
             "characters": ["Lucas", "Lucina"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "4th",
+                    "placing": 4,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -171,10 +171,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 8,
             "characters": ["Samus", "Greninja", "Sheik"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -186,10 +186,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 9,
             "characters": ["Wolf", "Joker"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "7th",
+                    "placing": 7,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -201,10 +201,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 10,
             "characters": ["Captain Falcon"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "7th",
+                    "placing": 7,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -216,7 +216,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 11,
             "characters": ["???"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -225,7 +225,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 12,
             "characters": ["Terry", "Cloud"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -234,7 +234,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 13,
             "characters": ["Link", "Snake", "Villager", "Falco"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -243,16 +243,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 14,
             "characters": ["Donkey Kong", "Ness", "Inkling", "Link"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "3rd",
+                    "placing": 3,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -264,16 +264,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 15,
             "characters": ["Bowser", "Snake"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "9th",
+                    "placing": 7,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "7th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -285,10 +285,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 16,
             "characters": ["Fox", "Ness"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "5th",
+                    "placing": 5,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -300,16 +300,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 17,
             "characters": ["Samus", "Byleth", "Kirby"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 },
                 {
                     "tournament_id": 2,
-                    "result": "13th",
+                    "placing": 13,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -321,10 +321,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 18,
             "characters": ["Kazuya", "Luigi"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "7th",
+                    "placing": 7,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -336,10 +336,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 19,
             "characters": ["ROB", "Lucas", "Pikachu"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "13th",
+                    "placing": 13,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -351,10 +351,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 20,
             "characters": ["Palutena"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 2,
-                    "result": "13th",
+                    "placing": 13,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -366,10 +366,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 21,
             "characters": ["Sephiroth", "Pyra & Mythra"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -381,10 +381,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 22,
             "characters": ["Ness"],
-            "placings": [
+            "results": [
                 {
                     "tournament_id": 1,
-                    "result": "9th",
+                    "placing": 9,
                     "wins": "TBA (Ids in an array of other players)",
                     "losses": "TBA (Ids in an array of other players)"
                 }
@@ -396,7 +396,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 23,
             "characters": ["Shulk"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -405,7 +405,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 24,
             "characters": ["Cloud"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -414,7 +414,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 25,
             "characters": ["Ness"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -423,7 +423,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 26,
             "characters": ["Ridley, Pichu"],
-            "placings": [
+            "results": [
             ]
         },
         {
@@ -432,7 +432,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 27,
             "characters": ["Captain Falcon"],
-            "placings": [
+            "results": [
             ]
         },
     ]

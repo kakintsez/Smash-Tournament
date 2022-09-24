@@ -13,5 +13,8 @@
 - Home Page
     - News Feed
 - CSS
+    - CSS Reset
+    - Transitions and Animations
 - Backend to make tournament creation easier (Only for admin)
 - Make registration page
+- Make Bracket Show Page (That updates)

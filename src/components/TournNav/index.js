@@ -17,8 +17,8 @@ const TournNav = ({ title, tournaments }) => {
             </div>
             <div className="navbar">
                 <h1>Navigation</h1>
-                <NavLink to="/" exact>Home</NavLink>
                 <ul>
+                    <li><NavLink to="/" exact>Home</NavLink></li>
                     {tournamentList}
                 </ul>
             </div>
