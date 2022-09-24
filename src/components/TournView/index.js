@@ -7,6 +7,8 @@ const TournView = ({ players, tournaments }) => {
     const tournament = tournaments.find(tournament => tournament.id === parseInt(tournamentId));
     // Find the players of this tournament
     const playersArr = players.filter(player => tournament.participants.includes(player.id));
+    // Sorting the players by results
+    playersArr.sort((a, b) => a.results[tournament.id].placing - b.results[tournament.id].placing)
     // Get list of all players with their name and results
     const playersList = playersArr.map(player => {
         let result = player.results[tournament.id]
@@ -29,7 +31,9 @@ const TournView = ({ players, tournaments }) => {
             <br/>
         </li> )
     })
-    // playersList.sort((a, b) => {
+    // debugger
+    // playersList.sort((a, b) => a.result[tournament.id].placing - b.result[tournament.id].placing)
+    // debugger
     //     debugger
     //     const a_placing = a.results[tournament.id];
     //     const b_placing = b.results[tournament.id];

@@ -20,7 +20,7 @@ const smashObject = {
             "date": "August 27th, 2022",
             "rank": "A",
             "entrants": 15,
-            "participants": [1,2,3],
+            "participants": [1,2,3,4,5,6,7,8,9,10,14,15,17,19,20],
             "top_eight_img": "https://i.imgur.com/ULt3pkh.png",
             "recent": true
         },

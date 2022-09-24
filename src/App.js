@@ -23,6 +23,10 @@ const App = () => {
           <Route path="/tournaments/:tournamentId">
             <TournView players={players} tournaments={tournaments} />
           </Route>
+          <Route path="/players">
+            {/* <PlayerNav /> */}
+            <h2>Players not here yet</h2>
+          </Route>
           <Route>
             <h2>Page Not Found</h2>
           </Route>
