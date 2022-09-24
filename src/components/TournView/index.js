@@ -9,30 +9,38 @@ const TournView = ({ players, tournaments }) => {
     const playersArr = players.filter(player => tournament.participants.includes(player.id));
     // Get list of all players with their name and results
     const playersList = playersArr.map(player => {
-        let result = player.results.find(result => result.tournament_id === tournament.id);
+        let result = player.results[tournament.id]
+        let placing_suffix = "th"
+        if (result.placing === 1) {
+            placing_suffix = "st"
+        } else if (result.placing === 2) {
+            placing_suffix = "nd"
+        } else if (result.placing === 3) {
+            placing_suffix = "rd"
+        }
         return ( <li key={player.id} className="player-info">
             <span className="player-name">{player.name}</span>
             <div className="results-list">
                 <h4>Results:</h4>
-                <span>Placing: {result.placing}</span>
+                <span>Placing: {result.placing}{placing_suffix}</span>
                 <span>Wins: {result.wins}</span>
                 <span>Losses: {result.losses}</span>
             </div>
             <br/>
         </li> )
     })
-    playersList.sort((playerA, playerB) => {
-        debugger
-        const a_placing = playerA.results.find(result => result.tournament_id === tournament.id);
-        const b_placing = playerB.results.find(result => result.tournament_id === tournament.id);
-        if (a_placing < b_placing) {
-            return -1;
-        } else if (a_placing > b_placing) {
-            return 1;
-        } else {
-            return 0;
-        }
-    })
+    // playersList.sort((a, b) => {
+    //     debugger
+    //     const a_placing = a.results[tournament.id];
+    //     const b_placing = b.results[tournament.id];
+    //     if (a_placing < b_placing) {
+    //         return -1;
+    //     } else if (a_placing > b_placing) {
+    //         return 1;
+    //     } else {
+    //         return 0;
+    //     }
+    // })
 
     return (
         <div className="tourn-view">
