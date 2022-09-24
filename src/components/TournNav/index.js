@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import './TournNav.css';
 
-const TournNav = ({ tournaments }) => {
+const TournNav = ({ title, tournaments }) => {
     const tournamentList = tournaments.map(tournament => (
         <li key={tournament.id}>
             <NavLink to={`/tournaments/${tournament.id}`}>
@@ -12,11 +12,16 @@ const TournNav = ({ tournaments }) => {
 
     return (
         <nav>
-          <h1>Tournaments</h1>
-          <NavLink to="/" exact>Home</NavLink>
-          <ul>
-            {tournamentList}
-          </ul>
+            <div className="top-logo">
+                <img className="smash-logo" src={title} />
+            </div>
+            <div className="navbar">
+                <h1>Navigation</h1>
+                <NavLink to="/" exact>Home</NavLink>
+                <ul>
+                    {tournamentList}
+                </ul>
+            </div>
         </nav>
       )
 }

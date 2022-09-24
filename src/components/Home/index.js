@@ -1,17 +1,20 @@
 import { Link, NavLink, useParams } from "react-router-dom";
 import './Home.css';
 
-const Home = ({ tournaments }) => {
+const Home = ({ title, tournaments }) => {
     // Finding most recent tournament that isn't upcoming
     // debugger
     const recentTourn = tournaments.find(tournament => tournament.recent === true)
     const recentLogoURL = recentTourn.top_eight_img;
     return (
         <div className="home">
-            <h1>Welcome to Kakintse's Smash Tournaments</h1>
-            <Link className="image-tile" to={`/tournaments/${2}`}>
+            <div className="home-top">
+                <h1>Welcome to Kakintse's Smash Tournaments</h1>
+                {/* <img className="smash-logo" src={title} /> */}
+            </div>
+            <Link className="home-logo" to={`/tournaments/${2}`}>
                 <img
-                    className="home-logo"
+                    className="recent-tourn-logo"
                     src={recentLogoURL}
                     alt={recentTourn.date} />
             </Link>

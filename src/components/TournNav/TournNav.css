@@ -1,0 +1,11 @@
+.top-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}

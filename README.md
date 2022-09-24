@@ -10,6 +10,8 @@
     - Player Description
     - Character Roster
     - Tournament Results
+- Home Page
+    - News Feed
 - CSS
 - Backend to make tournament creation easier (Only for admin)
 - Make registration page

@@ -1,3 +1,22 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-top {
+    display: flex;
+    justify-content: space-around;
+}
+
 .home-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.recent-tourn-logo {
     height: 400px;
+}
+
+.smash-logo {
+    height: 100px;
 }

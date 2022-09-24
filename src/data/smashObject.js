@@ -28,7 +28,7 @@ const smashObject = {
             "id": 3,
             "name": "Casual Party (Upcoming)",
             "date": "October 15th, 2022",
-            "rank": "C",
+            "rank": "Casual",
             "entrants": 0,
             "participants": [],
             "top_eight_img": "",
