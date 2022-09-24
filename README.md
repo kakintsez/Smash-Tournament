@@ -3,6 +3,7 @@
 - Tournament Show Page
     - Tournament Description (Tournament rank, players, date, etc)
     - Show Bracket
+    - Side Events
     - Show Results
     - Show Videos?
 - User Show Page
