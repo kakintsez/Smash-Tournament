@@ -178,7 +178,7 @@ const smashObject = {
             "id": 8,
             "name": "Josh",
             "attendance": "50%",
-            "rank": 8,
+            "rank": 13,
             "characters": ["Samus", "Greninja", "Sheik"],
             "image": "",
             "results": {
@@ -194,7 +194,7 @@ const smashObject = {
             "id": 9,
             "name": "William C",
             "attendance": "50%",
-            "rank": 9,
+            "rank": 8,
             "characters": ["Wolf", "Joker"],
             "image": "",
             "results": {
@@ -210,7 +210,7 @@ const smashObject = {
             "id": 10,
             "name": "Kevin B",
             "attendance": "50%",
-            "rank": 10,
+            "rank": 9,
             "characters": ["Captain Falcon"],
             "image": "",
             "results": {
@@ -226,7 +226,7 @@ const smashObject = {
             "id": 11,
             "name": "Destin",
             "attendance": "0%",
-            "rank": 11,
+            "rank": 20,
             "characters": ["???"],
             "image": "",
             "results": {}
@@ -235,7 +235,7 @@ const smashObject = {
             "id": 12,
             "name": "Will P",
             "attendance": "0%",
-            "rank": 12,
+            "rank": 21,
             "characters": ["Terry", "Cloud"],
             "image": "",
             "results": {}
@@ -244,7 +244,7 @@ const smashObject = {
             "id": 13,
             "name": "Steven C",
             "attendance": "0%",
-            "rank": 13,
+            "rank": 22,
             "characters": ["Link", "Snake", "Villager", "Falco"],
             "image": "",
             "results": {}
@@ -253,7 +253,7 @@ const smashObject = {
             "id": 14,
             "name": "Michael R",
             "attendance": "100%",
-            "rank": 14,
+            "rank": 10,
             "characters": ["Donkey Kong", "Ness", "Inkling", "Link"],
             "image": "",
             "results": {
@@ -275,7 +275,7 @@ const smashObject = {
             "id": 15,
             "name": "Kevin W",
             "attendance": "100%",
-            "rank": 15,
+            "rank": 12,
             "characters": ["Bowser", "Snake"],
             "image": "",
             "results": {
@@ -297,7 +297,7 @@ const smashObject = {
             "id": 16,
             "name": "Joe",
             "attendance": "50%",
-            "rank": 16,
+            "rank": 11,
             "characters": ["Fox", "Ness"],
             "image": "",
             "results": {
@@ -313,7 +313,7 @@ const smashObject = {
             "id": 17,
             "name": "James M",
             "attendance": "100%",
-            "rank": 17,
+            "rank": 14,
             "characters": ["Samus", "Byleth", "Kirby"],
             "image": "",
             "results": {
@@ -335,7 +335,7 @@ const smashObject = {
             "id": 18,
             "name": "Alex W",
             "attendance": "50%",
-            "rank": 18,
+            "rank": 15,
             "characters": ["Kazuya", "Luigi"],
             "image": "",
             "results": {
@@ -351,7 +351,7 @@ const smashObject = {
             "id": 19,
             "name": "Gabriel",
             "attendance": "50%",
-            "rank": 19,
+            "rank": 16,
             "characters": ["ROB", "Lucas", "Pikachu"],
             "image": "",
             "results": {
@@ -367,7 +367,7 @@ const smashObject = {
             "id": 20,
             "name": "Brian",
             "attendance": "50%",
-            "rank": 20,
+            "rank": 17,
             "characters": ["Palutena"],
             "image": "",
             "results": {
@@ -383,7 +383,7 @@ const smashObject = {
             "id": 21,
             "name": "Steven S",
             "attendance": "50%",
-            "rank": 21,
+            "rank": 18,
             "characters": ["Sephiroth", "Pyra & Mythra"],
             "image": "",
             "results": {
@@ -399,7 +399,7 @@ const smashObject = {
             "id": 22,
             "name": "Ed",
             "attendance": "50%",
-            "rank": 22,
+            "rank": 19,
             "characters": ["Ness"],
             "image": "",
             "results": {

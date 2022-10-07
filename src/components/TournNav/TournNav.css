@@ -9,3 +9,13 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+.navbar-link {
+    padding: 3px;
+    border: 2px solid green;
+    transition: transform .2s;
+}
+
+.navbar-link:hover {
+    transform: scale(1.1);
+}

@@ -8,11 +8,12 @@ const PlayerNav = ({ players }) => {
 
         return (
             <Link
-                className="players-on-nav"
                 to={`/Smash-Tournament/players/${player.name}`}
                 key={player.id}>
-                    {player.name}
-                    <img src={player.image} />
+                    <p className="players-on-nav">
+                        {player.name}
+                        <img src={player.image} />
+                    </p>
             </Link>
         )
     })

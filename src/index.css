@@ -1,1 +1,23 @@
 /* TODO Add site wide styles */
+
+.whole-app {
+    display: flex;
+}
+
+.side-bar {
+    display: flex;
+    transition: transform .2s;
+    transform: translateX(-265px);
+    /* border: 2px solid rgb(237, 0, 0); */
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.side-bar:hover {
+    transform: translateX(0px);
+}
+
+.side-bar-line {
+    border: 20px solid rgb(92, 145, 0);
+    z-index: 7;
+}
