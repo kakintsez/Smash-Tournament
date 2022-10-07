@@ -25,7 +25,9 @@ const PlayerNav = ({ players }) => {
         <div className="players">
             <h4>Sort Option Coming Soon</h4>
             <ul className="players-nav">
-                {playerList}
+                <div className="player-nav-scroll">
+                    {playerList}
+                </div>
             </ul>
             <Route path="/Smash-Tournament/players/:playerName">
                 <PlayerShow players={players} />

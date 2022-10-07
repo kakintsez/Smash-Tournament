@@ -10,6 +10,7 @@
     transform: translateX(0px);
     /* transform: translateX(-290px); */
     transition: transform .2s;
+    width: 60vw;
     z-index: -10;
 }
 
@@ -18,7 +19,7 @@
     /* transform: translateX(290px); */
 }
 
-.fixed {
+.sticky-navbar {
     position: sticky;
     top: 0px;
 }

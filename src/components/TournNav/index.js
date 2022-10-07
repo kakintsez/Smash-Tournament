@@ -11,7 +11,7 @@ const TournNav = ({ title, tournaments }) => {
     ))
 
     return (
-        <div className="fixed">
+        <div className="sticky-navbar">
         <nav className="side-bar">
             <div className="navbar-whole">
                 <div className="top-logo">

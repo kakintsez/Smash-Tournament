@@ -1,6 +1,27 @@
 .players-nav {
+    border: 2px solid rgb(0, 87, 128);
+    max-width: 90vw;
+    /* margin: auto; */
+    overflow-x: hidden;
+}
+
+.players-nav:hover {
+    /* transform: translate(-100%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s; */
+}
+
+.player-nav-scroll {
     display: flex;
     flex-direction: row;
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+
+.player-nav-scroll:hover {
+    transform: translate(-109%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
 }
 
 .players-on-nav {

@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div className="whole-app">
-      <div className="fixed">
+      <div className="sticky-navbar">
       <TournNav
           title={smashObject.info.title}
           tournaments={tournaments}/>
