@@ -26,6 +26,7 @@ const App = () => {
           <Route path="/players">
             {/* <PlayerNav /> */}
             <h2>Players not here yet</h2>
+            <h3>Sort option - Rank</h3>
           </Route>
           <Route>
             <h2>Page Not Found</h2>

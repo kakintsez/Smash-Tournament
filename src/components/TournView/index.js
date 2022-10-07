@@ -31,27 +31,15 @@ const TournView = ({ players, tournaments }) => {
             <br/>
         </li> )
     })
-    // debugger
-    // playersList.sort((a, b) => a.result[tournament.id].placing - b.result[tournament.id].placing)
-    // debugger
-    //     debugger
-    //     const a_placing = a.results[tournament.id];
-    //     const b_placing = b.results[tournament.id];
-    //     if (a_placing < b_placing) {
-    //         return -1;
-    //     } else if (a_placing > b_placing) {
-    //         return 1;
-    //     } else {
-    //         return 0;
-    //     }
-    // })
 
     return (
         <div className="tourn-view">
             <h2>Tournament #{tournament.id}: {tournament.name}</h2>
             <h3>Date of Tournament: {tournament.date}</h3>
             <h4>Rank: {tournament.rank}</h4>
-            <h4>entrants: {tournament.entrants}</h4>
+            <h4>Entrants: {tournament.entrants}</h4>
+            <h3>Bracket:</h3>
+            <img className="bracket-image" src={tournament.bracket}/>
             <h2>Players:</h2>
             <ul>
                 {playersList}

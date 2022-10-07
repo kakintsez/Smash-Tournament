@@ -11,6 +11,7 @@ const smashObject = {
             "rank": "B",
             "entrants": 11,
             "participants": [1,2,4,7,14,15,16,17,18,21,22],
+            "bracket": "https://i.imgur.com/NWqaSWT.png",
             "top_eight_img": "",
             "recent": false
         },
@@ -21,6 +22,7 @@ const smashObject = {
             "rank": "A",
             "entrants": 15,
             "participants": [1,2,3,4,5,6,7,8,9,10,14,15,17,19,20],
+            "bracket": "https://i.imgur.com/7SeXsuA.png",
             "top_eight_img": "https://i.imgur.com/ULt3pkh.png",
             "recent": true
         },
