@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Smash-Tournament/static/css/main.fabdb9d6.css",
+    "main.js": "/Smash-Tournament/static/js/main.3d198649.js",
+    "index.html": "/Smash-Tournament/index.html",
+    "main.fabdb9d6.css.map": "/Smash-Tournament/static/css/main.fabdb9d6.css.map",
+    "main.3d198649.js.map": "/Smash-Tournament/static/js/main.3d198649.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fabdb9d6.css",
+    "static/js/main.3d198649.js"
+  ]
+}
