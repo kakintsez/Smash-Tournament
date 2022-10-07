@@ -20,13 +20,16 @@ const TournView = ({ players, tournaments }) => {
         } else if (result.placing === 3) {
             placing_suffix = "rd"
         }
+
+        let wins = result.wins.map(id => players[id].name)
+        let losses = result.losses.map(id => players[id].name)
         return ( <li key={player.id} className="player-info">
             <span className="player-name">{player.name}</span>
             <div className="results-list">
                 <h4>Results:</h4>
                 <span>Placing: {result.placing}{placing_suffix}</span>
-                <span>Wins: {result.wins}</span>
-                <span>Losses: {result.losses}</span>
+                <span>Wins: {wins.join(', ')}</span>
+                <span>Losses: {losses.join(', ')}</span>
             </div>
             <br/>
         </li> )
