@@ -1,0 +1,42 @@
+// Find the tournament by tournamentId
+export const findTournament = (tournaments, tournamentId) => {
+    const tournament = tournaments.find(tournament =>
+        tournament.id === parseInt(tournamentId));
+    return { tournament }
+}
+
+// Find players by tournament entrants array
+export const findPlayers = (players, tournament) => {
+    const playersArr = players.filter(player =>
+        tournament.participants.includes(player.id));
+    return { playersArr }
+}
+
+// Get all the players that you won/lost to in this tournament in an array
+export const findMatchResults = (result, playersArr) => {
+    let wins = result.wins.map(id => playersArr[id].name)
+    let losses = result.losses.map(id => playersArr[id].name)
+
+    return { wins, losses }
+}
+
+// Get the suffix of the placing
+export const placingSuffix = (placing) => {
+    let suffix = "th"
+    if (placing === 1) {
+        suffix = "st"
+    } else if (placing === 2) {
+        suffix = "nd"
+    } else if (placing === 3) {
+        suffix = "rd"
+    }
+    return { suffix };
+}
+
+// SORTING
+
+// Sort by placings in a tournament
+export const sortByPlacing = (playersArr, tournament) => {
+    playersArr.sort((a, b) =>
+        a.results[tournament.id].placing - b.results[tournament.id].placing)
+}

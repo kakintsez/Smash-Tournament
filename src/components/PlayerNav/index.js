@@ -1,8 +1,8 @@
 import { Route, Link, NavLink, useParams } from "react-router-dom";
 import './PlayerNav.css';
-import PlayerView from "../PlayerView";
+import PlayerShow from "../PlayerShow";
 
-const PlayerNav = ({ players }) => {
+const PlayerNav = ({ players, tournaments }) => {
     let playerList = players.map(player => {
         return (
             <Link
@@ -21,7 +21,7 @@ const PlayerNav = ({ players }) => {
                 {playerList}
             </ul>
             <Route path="/Smash-Tournament/players/:playerName">
-                <PlayerView players={players} />
+                <PlayerShow players={players} tournaments={tournaments} />
             </Route>
         </div>
     )

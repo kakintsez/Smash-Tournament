@@ -1,35 +1,32 @@
 import { NavLink, useParams } from "react-router-dom";
 import './TournView.css';
+import {
+    findTournament,
+    findPlayers,
+    findMatchResults,
+    placingSuffix,
+    sortByPlacing }
+from "../../util/functions";
 
 const TournView = ({ players, tournaments }) => {
     const { tournamentId } = useParams();
-    // Find the tournament of this tournament show page
-    const tournament = tournaments.find(tournament => tournament.id === parseInt(tournamentId));
-    // Find the players of this tournament
-    const playersArr = players.filter(player => tournament.participants.includes(player.id));
-    // Sorting the players by results
-    playersArr.sort((a, b) => a.results[tournament.id].placing - b.results[tournament.id].placing)
+    const { tournament } = findTournament(tournaments, tournamentId)
+    const { playersArr } = findPlayers(players, tournament)
+    sortByPlacing(playersArr, tournament)
+
     // Get list of all players with their name and results
     const playersList = playersArr.map(player => {
         let result = player.results[tournament.id]
-        let placing_suffix = "th"
-        if (result.placing === 1) {
-            placing_suffix = "st"
-        } else if (result.placing === 2) {
-            placing_suffix = "nd"
-        } else if (result.placing === 3) {
-            placing_suffix = "rd"
-        }
+        let { suffix } = placingSuffix(result.placing)
+        const { wins, losses } = findMatchResults(result, players)
 
-        let wins = result.wins.map(id => players[id].name)
-        let losses = result.losses.map(id => players[id].name)
         return ( <li key={player.id} className="player-info">
-            <span className="player-name">{player.name}</span>
+            <span className="player-name">{player.name} </span>
             <div className="results-list">
                 <h4>Results:</h4>
-                <span>Placing: {result.placing}{placing_suffix}</span>
-                <span>Wins: {wins.join(', ')}</span>
-                <span>Losses: {losses.join(', ')}</span>
+                <span>Placing: {result.placing}{suffix} </span>
+                <span>Wins: {wins.join(', ')} </span>
+                <span>Losses: {losses.join(', ')} </span>
             </div>
             <br/>
         </li> )
