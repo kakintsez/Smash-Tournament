@@ -7,8 +7,9 @@ ol, li, dl, dt, dd, form, a, fieldset, input, th, td {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+p {
+  padding: .6em 0;
+  margin: 0 15px;
 }
 
 body {
@@ -18,16 +19,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
   padding: .6em 0;
   margin: 0 15px;
 }
 
 ul, ol {
+  padding: .6em 0;
+  margin: 0 15px;
   list-style: none;
 }
 
 img {
+  height: 100px;
   border: 0;
 }
 

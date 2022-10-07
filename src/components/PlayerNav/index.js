@@ -4,9 +4,11 @@ import PlayerShow from "../PlayerShow";
 
 const PlayerNav = ({ players }) => {
     let playerList = players.map(player => {
+        if (Object.values(player.results).length === 0) return null
+
         return (
             <Link
-                className=""
+                className="players-on-nav"
                 to={`/Smash-Tournament/players/${player.name}`}
                 key={player.id}>
                     {player.name}
@@ -18,7 +20,7 @@ const PlayerNav = ({ players }) => {
     return (
         <div className="">
             <h1>Sort Option Coming Soon</h1>
-            <ul className="">
+            <ul className="players-nav">
                 {playerList}
             </ul>
             <Route path="/Smash-Tournament/players/:playerName">

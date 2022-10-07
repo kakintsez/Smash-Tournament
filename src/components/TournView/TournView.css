@@ -14,8 +14,13 @@
 
 .player-info {
     border: 2px solid green;
+    transition: transform .2s;
     margin: 10px;
     padding: 10px;
+}
+
+.player-info:hover {
+    transform: scale(1.025);
 }
 
 .bracket-image {

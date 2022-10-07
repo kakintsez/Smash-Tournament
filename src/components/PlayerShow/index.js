@@ -16,24 +16,24 @@ const PlayerShow = ({ players }) => {
 
         return (
             <li key={result.id} className="" >
-                <h2>Tournament: {tournament.name} </h2>
-                <h2>Placing: {result.placing}{suffix} </h2>
-                <h2>Wins: {wins.join(", ")} </h2>
-                <h2>Losses: {losses.join(", ")} </h2>
+                <p>Tournament: {tournament.name} </p>
+                <p>Placing: {result.placing}{suffix} </p>
+                <p>Wins: {wins.join(", ")} </p>
+                <p>Losses: {losses.join(", ")} </p>
             </li>
         )
     })
 
-    if (!selectedPlayer) return <h1>This player does not exist</h1>
+    if (!selectedPlayer) return <h2>This player does not exist</h2>
 
     return (
         <div>
-            <h1>{selectedPlayer.name}</h1>
-            <h2>Rank: {selectedPlayer.rank}</h2>
-            <h2>Characters: {selectedPlayer.characters.join(", ")}</h2>
+            <h2>{selectedPlayer.name}</h2>
+            <p>Rank: {selectedPlayer.rank}</p>
+            <p>Characters: {selectedPlayer.characters.join(", ")}</p>
             <img src={selectedPlayer.image} />
-            <h2>Attendance: {selectedPlayer.attendance}</h2>
-            <h2>Results: {results}</h2>
+            <p>Attendance: {selectedPlayer.attendance}</p>
+            <ul>Results: {results}</ul>
         </div>
     )
 }
