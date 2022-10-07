@@ -5,7 +5,7 @@ const Home = ({ title, tournaments }) => {
     // Finding most recent tournament that isn't upcoming
     // debugger
     const recentTourn = tournaments.find(tournament => tournament.recent === true)
-    const recentLogoURL = recentTourn.top_eight_img;
+    const recentLogoURL = recentTourn.topEightImg;
     return (
         <div className="home">
             <div className="home-top">

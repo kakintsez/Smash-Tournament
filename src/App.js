@@ -25,7 +25,7 @@ const App = () => {
             <TournView players={players} tournaments={tournaments} />
           </Route>
           <Route path="/Smash-Tournament/players">
-            <PlayerNav players={players} tournaments={tournaments}/>
+            <PlayerNav players={players}/>
           </Route>
           <Route>
             <h2>Page Not Found</h2>

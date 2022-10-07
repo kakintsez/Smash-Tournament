@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, Link, useParams } from "react-router-dom";
 import './TournView.css';
 import {
     findTournament,
@@ -10,8 +10,8 @@ from "../../util/functions";
 
 const TournView = ({ players, tournaments }) => {
     const { tournamentId } = useParams();
-    const { tournament } = findTournament(tournaments, tournamentId)
-    const { playersArr } = findPlayers(players, tournament)
+    const { tournament } = findTournament(tournamentId)
+    const { playersArr } = findPlayers(tournament)
     sortByPlacing(playersArr, tournament)
 
     // Get list of all players with their name and results
@@ -20,16 +20,20 @@ const TournView = ({ players, tournaments }) => {
         let { suffix } = placingSuffix(result.placing)
         const { wins, losses } = findMatchResults(result, players)
 
-        return ( <li key={player.id} className="player-info">
-            <span className="player-name">{player.name} </span>
-            <div className="results-list">
-                <h4>Results:</h4>
-                <span>Placing: {result.placing}{suffix} </span>
-                <span>Wins: {wins.join(', ')} </span>
-                <span>Losses: {losses.join(', ')} </span>
-            </div>
-            <br/>
-        </li> )
+        return (
+            <Link to={`/Smash-Tournament/players/${player.name}`} key={player.id} >
+                <li className="player-info">
+                    <span className="player-name">{player.name} </span>
+                    <div className="results-list">
+                        <h4>Results:</h4>
+                        <span>Placing: {result.placing}{suffix} </span>
+                        <span>Wins: {wins.join(', ')} </span>
+                        <span>Losses: {losses.join(', ')} </span>
+                    </div>
+                    <br/>
+                </li>
+            </Link>
+        )
     })
 
     return (

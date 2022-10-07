@@ -12,7 +12,7 @@ const smashObject = {
             "entrants": 11,
             "participants": [1,2,4,7,14,15,16,17,18,21,22],
             "bracket": "https://i.imgur.com/NWqaSWT.png",
-            "top_eight_img": "",
+            "topEightImg": "",
             "recent": false
         },
         {
@@ -23,7 +23,7 @@ const smashObject = {
             "entrants": 15,
             "participants": [1,2,3,4,5,6,7,8,9,10,14,15,17,19,20],
             "bracket": "https://i.imgur.com/us2xGNo.png",
-            "top_eight_img": "https://i.imgur.com/ULt3pkh.png",
+            "topEightImg": "https://i.imgur.com/ULt3pkh.png",
             "recent": true
         },
         {
@@ -33,7 +33,7 @@ const smashObject = {
             "rank": "B",
             "entrants": 0,
             "participants": [],
-            "top_eight_img": "",
+            "topEightImg": "",
             "recent": false
         }
     ],
@@ -44,15 +44,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 1,
             "characters": ["Pikachu", "Pokemon Trainer", "Wolf"],
+            "image": "https://i.imgur.com/ULt3pkh.png",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 5,
                     "wins": [21, 15],
                     "losses": [14, 2]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 1,
                     "wins": [7, 9, 4, 5, 2, 3, 3],
                     "losses": [6]
@@ -65,15 +66,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 2,
             "characters": ["Link", "Lucina", "Ganondorf"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 1,
                     "wins": [17, 1, 7, 14, 4, 4],
                     "losses": [4]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 3,
                     "wins": [20, 5, 4],
                     "losses": [3, 1]
@@ -86,9 +88,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 3,
             "characters": ["Lucina", "Zero Suit Samus", "Wolf"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 2,
                     "wins": [14, 9, 6, 2],
                     "losses": [1, 1]
@@ -101,15 +104,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 4,
             "characters": ["Pyra & Mythra", "Joker", "Shulk"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 2,
                     "wins": [15, 2, 14],
                     "losses": [2, 2]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 5,
                     "wins": [19, 15],
                     "losses": [2, 1]
@@ -122,9 +126,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 5,
             "characters": ["Zelda"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 4,
                     "wins": [17, 8, 10, 6],
                     "losses": [2, 1]
@@ -137,9 +142,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 6,
             "characters": ["Pikachu", "Lucina"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 5,
                     "wins": [10, 1],
                     "losses": [3, 5]
@@ -152,15 +158,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 7,
             "characters": ["Lucas", "Lucina"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 4,
                     "wins": [17, 18, 16],
                     "losses": [16, 2]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 9,
                     "wins": [17],
                     "losses": [15, 1]
@@ -173,9 +180,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 8,
             "characters": ["Samus", "Greninja", "Sheik"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 9,
                     "wins": [20],
                     "losses": [9, 5]
@@ -188,9 +196,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 9,
             "characters": ["Wolf", "Joker"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 7,
                     "wins": [8, 14],
                     "losses": [3, 1]
@@ -203,9 +212,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 10,
             "characters": ["Captain Falcon"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 7,
                     "wins": [15],
                     "losses": [6, 5]
@@ -218,6 +228,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 11,
             "characters": ["???"],
+            "image": "",
             "results": {}
         },
         {
@@ -226,6 +237,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 12,
             "characters": ["Terry", "Cloud"],
+            "image": "",
             "results": {}
         },
         {
@@ -234,6 +246,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 13,
             "characters": ["Link", "Snake", "Villager", "Falco"],
+            "image": "",
             "results": {}
         },
         {
@@ -242,15 +255,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 14,
             "characters": ["Donkey Kong", "Ness", "Inkling", "Link"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 3,
                     "wins": [18, 1, 16],
                     "losses": [4, 2]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 9,
                     "wins": [19],
                     "losses": [3, 9]
@@ -263,15 +277,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 15,
             "characters": ["Bowser", "Snake"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 7,
                     "wins": [21],
                     "losses": [4, 1]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 9,
                     "wins": [7],
                     "losses": [4, 10]
@@ -284,9 +299,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 16,
             "characters": ["Fox", "Ness"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 5,
                     "wins": [22, 7],
                     "losses": [14, 7]
@@ -299,15 +315,16 @@ const smashObject = {
             "attendance": "100%",
             "rank": 17,
             "characters": ["Samus", "Byleth", "Kirby"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 9,
                     "wins": [],
                     "losses": [2, 7]
                 },
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 13,
                     "wins": [],
                     "losses": [5, 7]
@@ -320,9 +337,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 18,
             "characters": ["Kazuya", "Luigi"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 7,
                     "wins": [22],
                     "losses": [14, 7]
@@ -335,9 +353,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 19,
             "characters": ["ROB", "Lucas", "Pikachu"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 13,
                     "wins": [],
                     "losses": [4, 14]
@@ -350,9 +369,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 20,
             "characters": ["Palutena"],
+            "image": "",
             "results": {
                 2: {
-                    "tournament_id": 2,
+                    "tournamentId": 2,
                     "placing": 13,
                     "wins": [],
                     "losses": [2, 8]
@@ -365,9 +385,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 21,
             "characters": ["Sephiroth", "Pyra & Mythra"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 9,
                     "wins": [],
                     "losses": [15, 1]
@@ -380,9 +401,10 @@ const smashObject = {
             "attendance": "50%",
             "rank": 22,
             "characters": ["Ness"],
+            "image": "",
             "results": {
                 1: {
-                    "tournament_id": 1,
+                    "tournamentId": 1,
                     "placing": 9,
                     "wins": [],
                     "losses": [16, 18]
@@ -395,6 +417,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 23,
             "characters": ["Shulk"],
+            "image": "",
             "results": {}
         },
         {
@@ -403,6 +426,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 24,
             "characters": ["Cloud"],
+            "image": "",
             "results": {}
         },
         {
@@ -411,6 +435,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 25,
             "characters": ["Ness"],
+            "image": "",
             "results": {}
         },
         {
@@ -419,6 +444,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 26,
             "characters": ["Ridley, Pichu"],
+            "image": "",
             "results": {}
         },
         {
@@ -427,6 +453,7 @@ const smashObject = {
             "attendance": "0%",
             "rank": 27,
             "characters": ["Captain Falcon"],
+            "image": "",
             "results": {}
         },
     ]

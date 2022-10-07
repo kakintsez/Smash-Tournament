@@ -1,21 +1,26 @@
+import smashObject from "../data/smashObject";
+
+const tournaments = smashObject.tournaments;
+const players = smashObject.players;
+
 // Find the tournament by tournamentId
-export const findTournament = (tournaments, tournamentId) => {
+export const findTournament = (tournamentId) => {
     const tournament = tournaments.find(tournament =>
         tournament.id === parseInt(tournamentId));
     return { tournament }
 }
 
 // Find players by tournament entrants array
-export const findPlayers = (players, tournament) => {
+export const findPlayers = (tournament) => {
     const playersArr = players.filter(player =>
         tournament.participants.includes(player.id));
     return { playersArr }
 }
 
 // Get all the players that you won/lost to in this tournament in an array
-export const findMatchResults = (result, playersArr) => {
-    let wins = result.wins.map(id => playersArr[id].name)
-    let losses = result.losses.map(id => playersArr[id].name)
+export const findMatchResults = (result) => {
+    let wins = result.wins.map(id => players[id].name)
+    let losses = result.losses.map(id => players[id].name)
 
     return { wins, losses }
 }
