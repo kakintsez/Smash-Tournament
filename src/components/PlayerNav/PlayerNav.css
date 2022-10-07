@@ -1,8 +1,11 @@
 .players-nav {
     border: 2px solid rgb(0, 87, 128);
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 90vw;
     /* margin: auto; */
     overflow-x: hidden;
+    position: relative;
 }
 
 .players-nav:hover {
@@ -14,15 +17,49 @@
 .player-nav-scroll {
     display: flex;
     flex-direction: row;
+}
+
+.scroll-button {
+}
+
+.left {
+    position: absolute;
+    top: 55px;
+    left: 5px;
+    /* margin-top: 52px; */
+}
+
+.right {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    /* margin-top: -75px;
+    margin-left: 1200px; */
+}
+
+/* 
+.player-nav-scroll-left {
     transition-timing-function: ease-in-out;
     transition-duration: 5s;
 }
 
-.player-nav-scroll:hover {
+.player-nav-scroll-right1 {
     transform: translate(-109%);
     transition-timing-function: ease-in-out;
     transition-duration: 5s;
 }
+
+.player-nav-scroll-right2 {
+    transform: translate(-109%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+}
+
+.player-nav-scroll-right3 {
+    transform: translate(-109%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+} */
 
 .players-on-nav {
     border: 2px solid green;
