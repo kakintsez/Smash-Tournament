@@ -1,7 +1,7 @@
 {
   "name": "my-smash-tournament",
   "version": "0.1.0",
-  "homepage": "https://kinkatse.github.io/Smash-Tournament",
+  "homepage": "https://kakintsez.github.io/Smash-Tournament",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
