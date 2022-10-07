@@ -4,7 +4,7 @@ import './TournNav.css';
 const TournNav = ({ title, tournaments }) => {
     const tournamentList = tournaments.map(tournament => (
         <li key={tournament.id}>
-            <NavLink to={`/tournaments/${tournament.id}`}>
+            <NavLink to={`/Smash-Tournament/tournaments/${tournament.id}`}>
             {tournament.name} - {tournament.date}
             </NavLink>
         </li>
@@ -18,8 +18,8 @@ const TournNav = ({ title, tournaments }) => {
             <div className="navbar">
                 <h1>Navigation</h1>
                 <ul>
-                    <li><NavLink to="/" exact>Home</NavLink></li>
-                    <li><NavLink to="/players" exact>Players</NavLink></li>
+                    <li><NavLink to="/Smash-Tournament/" exact>Home</NavLink></li>
+                    <li><NavLink to="/Smash-Tournament/players" exact>Players</NavLink></li>
                     {tournamentList}
                 </ul>
             </div>

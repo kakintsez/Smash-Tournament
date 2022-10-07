@@ -22,7 +22,7 @@ const smashObject = {
             "rank": "A",
             "entrants": 15,
             "participants": [1,2,3,4,5,6,7,8,9,10,14,15,17,19,20],
-            "bracket": "https://i.imgur.com/7SeXsuA.png",
+            "bracket": "https://i.imgur.com/us2xGNo.png",
             "top_eight_img": "https://i.imgur.com/ULt3pkh.png",
             "recent": true
         },
@@ -48,14 +48,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 5,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [21, 15],
+                    "losses": [14, 2]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 1,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [7, 9, 4, 5, 2, 3, 3],
+                    "losses": [6]
                 }
             }
         },
@@ -69,14 +69,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 1,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [17, 1, 7, 14, 4, 4],
+                    "losses": [4]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 3,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [20, 5, 4],
+                    "losses": [3, 1]
                 }
             }
         },
@@ -90,8 +90,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 2,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [14, 9, 6, 2],
+                    "losses": [1, 1]
                 }
             }
         },
@@ -105,14 +105,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 2,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [15, 2, 14],
+                    "losses": [2, 2]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 5,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [19, 15],
+                    "losses": [2, 1]
                 }
             }
         },
@@ -126,8 +126,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 4,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [17, 8, 10, 6],
+                    "losses": [2, 1]
                 }
             }
         },
@@ -141,8 +141,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 5,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [10, 1],
+                    "losses": [3, 5]
                 }
             }
         },
@@ -156,14 +156,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 4,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [17, 18, 16],
+                    "losses": [16, 2]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [17],
+                    "losses": [15, 1]
                 }
             }
         },
@@ -177,8 +177,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [20],
+                    "losses": [9, 5]
                 }
             }
         },
@@ -192,8 +192,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 7,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [8, 14],
+                    "losses": [3, 1]
                 }
             }
         },
@@ -207,8 +207,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 7,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [15],
+                    "losses": [6, 5]
                 }
             }
         },
@@ -246,14 +246,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 3,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [18, 1, 16],
+                    "losses": [4, 2]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [19],
+                    "losses": [3, 9]
                 }
             }
         },
@@ -267,14 +267,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 7,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [21],
+                    "losses": [4, 1]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [7],
+                    "losses": [4, 10]
                 }
             }
         },
@@ -288,8 +288,8 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 5,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [22, 7],
+                    "losses": [14, 7]
                 }
             }
         },
@@ -303,14 +303,14 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [2, 7]
                 },
                 2: {
                     "tournament_id": 2,
                     "placing": 13,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [5, 7]
                 }
             }
         },
@@ -324,8 +324,8 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 7,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [22],
+                    "losses": [14, 7]
                 }
             }
         },
@@ -339,8 +339,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 13,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [4, 14]
                 }
             }
         },
@@ -354,8 +354,8 @@ const smashObject = {
                 2: {
                     "tournament_id": 2,
                     "placing": 13,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [2, 8]
                 }
             }
         },
@@ -369,8 +369,8 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [15, 1]
                 }
             }
         },
@@ -384,8 +384,8 @@ const smashObject = {
                 1: {
                     "tournament_id": 1,
                     "placing": 9,
-                    "wins": "TBA (Ids in an array of other players)",
-                    "losses": "TBA (Ids in an array of other players)"
+                    "wins": [],
+                    "losses": [16, 18]
                 }
             }
         },

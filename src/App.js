@@ -15,15 +15,15 @@ const App = () => {
           tournaments={tournaments}/>
       <main>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/Smash-Tournament/" exact>
             <Home
                 title={smashObject.info.title}
                 tournaments={tournaments} />
           </Route>
-          <Route path="/tournaments/:tournamentId">
+          <Route path="/Smash-Tournament/tournaments/:tournamentId">
             <TournView players={players} tournaments={tournaments} />
           </Route>
-          <Route path="/players">
+          <Route path="/Smash-Tournament/players">
             {/* <PlayerNav /> */}
             <h2>Players not here yet</h2>
             <h3>Sort option - Rank</h3>

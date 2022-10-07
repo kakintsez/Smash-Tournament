@@ -12,7 +12,7 @@ const Home = ({ title, tournaments }) => {
                 <h1>Welcome to Kakintse's Smash Tournaments</h1>
                 {/* <img className="smash-logo" src={title} /> */}
             </div>
-            <Link className="home-logo" to={`/tournaments/${2}`}>
+            <Link className="home-logo" to={`/Smash-Tournament/tournaments/${2}`}>
                 <img
                     className="recent-tourn-logo"
                     src={recentLogoURL}
