@@ -11,10 +11,12 @@ const App = () => {
 
   return (
     <div className="whole-app">
+      <div className="fixed">
       <TournNav
           title={smashObject.info.title}
           tournaments={tournaments}/>
-      <main>
+      </div>
+      <main className="main-app">
         <Switch>
           <Route path="/Smash-Tournament/" exact>
             <Home

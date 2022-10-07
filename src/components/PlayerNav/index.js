@@ -1,9 +1,12 @@
 import { Route, Link, NavLink, useParams } from "react-router-dom";
 import './PlayerNav.css';
 import PlayerShow from "../PlayerShow";
+import { sortByRanking } from "../../util/functions";
 
 const PlayerNav = ({ players }) => {
-    let playerList = players.map(player => {
+    const { rankList} = sortByRanking(players)
+
+    let playerList = rankList.map(player => {
         if (Object.values(player.results).length === 0) return null
 
         return (
@@ -19,8 +22,8 @@ const PlayerNav = ({ players }) => {
     })
 
     return (
-        <div className="">
-            <h1>Sort Option Coming Soon</h1>
+        <div className="players">
+            <h4>Sort Option Coming Soon</h4>
             <ul className="players-nav">
                 {playerList}
             </ul>

@@ -3,14 +3,15 @@ import './TournNav.css';
 
 const TournNav = ({ title, tournaments }) => {
     const tournamentList = tournaments.map(tournament => (
-        <li key={tournament.id} className="navbar-link">
-            <NavLink to={`/Smash-Tournament/tournaments/${tournament.id}`}>
+        <NavLink to={`/Smash-Tournament/tournaments/${tournament.id}`} key={tournament.id}>
+            <li className="navbar-link">
                 {tournament.name} - {tournament.date}
-            </NavLink>
-        </li>
+            </li>
+        </NavLink>
     ))
 
     return (
+        <div className="fixed">
         <nav className="side-bar">
             <div className="navbar-whole">
                 <div className="top-logo">
@@ -18,23 +19,24 @@ const TournNav = ({ title, tournaments }) => {
                 </div>
                 <div className="navbar">
                     <h1>Navigation</h1>
-                    <ul>
-                        <li className="navbar-link">
-                            <NavLink to="/Smash-Tournament/" exact>
+                    <ul className="navbar-buttons">
+                        <NavLink to="/Smash-Tournament/" exact>
+                            <li className="navbar-link">
                                 Home
-                            </NavLink>
-                        </li>
-                        <li className="navbar-link">
-                            <NavLink to="/Smash-Tournament/players" exact>
+                            </li>
+                        </NavLink>
+                        <NavLink to="/Smash-Tournament/players" exact>
+                            <li className="navbar-link">
                                 Players
-                            </NavLink>
-                        </li>
+                            </li>
+                        </NavLink>
                         {tournamentList}
                     </ul>
                 </div>
             </div>
             <div className="side-bar-line"></div>
         </nav>
+        </div>
       )
 }
 

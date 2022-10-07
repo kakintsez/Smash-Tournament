@@ -27,7 +27,7 @@ const PlayerShow = ({ players }) => {
     if (!selectedPlayer) return <h2>This player does not exist</h2>
 
     return (
-        <div>
+        <div className="player-show-info">
             <h2>{selectedPlayer.name}</h2>
             <p>Rank: {selectedPlayer.rank}</p>
             <p>Characters: {selectedPlayer.characters.join(", ")}</p>

@@ -1,9 +1,5 @@
-.top-logo {
-    display: flex;
-    justify-content: space-around;
-}
-
 .navbar {
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18,4 +14,21 @@
 
 .navbar-link:hover {
     transform: scale(1.1);
+}
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-buttons li {
+    width: 261px;
+    text-align: center;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
 }

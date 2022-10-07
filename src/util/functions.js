@@ -45,3 +45,9 @@ export const sortByPlacing = (playersArr, tournament) => {
     playersArr.sort((a, b) =>
         a.results[tournament.id].placing - b.results[tournament.id].placing)
 }
+
+// Sort by ranking
+export const sortByRanking = (playersArr) => {
+    const rankList = playersArr.sort((a, b) => a.rank - b.rank)
+    return { rankList }
+}
