@@ -2,6 +2,7 @@ import smashObject from "./data/smashObject";
 import TournNav from "./components/TournNav";
 import TournView from "./components/TournView";
 import PlayerNav from "./components/PlayerNav";
+import PlayerNavBetter from "./components/PlayerNavBetter";
 import Home from "./components/Home";
 import { Switch, Route } from 'react-router-dom';
 
@@ -27,7 +28,8 @@ const App = () => {
             <TournView players={players} tournaments={tournaments} />
           </Route>
           <Route path="/Smash-Tournament/players">
-            <PlayerNav players={players}/>
+            {/* <PlayerNav players={players}/> */}
+            <PlayerNavBetter players={players}/>
           </Route>
           <Route>
             <h2>Page Not Found</h2>

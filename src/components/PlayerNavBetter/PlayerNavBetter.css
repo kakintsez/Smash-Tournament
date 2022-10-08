@@ -1,21 +1,21 @@
-/* .players {
+.players {
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
 .players-nav {
-    /* border: 2px solid #104F55;
+    /* border: 2px solid #104F55; */
     padding-left: 10px;
-    padding-right: 10px; */
+    padding-right: 10px;
     /* min-width: 700px; */
     /* max-width: 1302px; */
     /* width: 90%; */
-    /* width: 1200px;
-    overflow-x: hidden;
+    width: 900px;
+    /* overflow-x: hidden; */
     position: relative;
-    background-color: #32746D;
-    border-radius: 5px; */
+    /* background-color: #32746D; */
+    border-radius: 5px;
 }
 
 .players-nav:hover {
@@ -24,7 +24,7 @@
     transition-duration: 3s; */
 }
 
-/* .player-nav-scroll {
+.player-nav-scroll {
     display: flex;
     flex-direction: row;
 }
@@ -43,18 +43,18 @@
     z-index: 8;
 }
 
-.scroll-direction-1 {
+/* .scroll-direction-1 {
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
-}
+} */
 
-.scroll-direction-2 {
+/* .scroll-direction-2 {
     transform: translate(-62.6%);
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
-}
+} */
 
-.scroll-direction-3 {
+/* .scroll-direction-3 {
     transform: translate(-137.7%);
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
@@ -66,17 +66,23 @@
     transition-duration: 1s;
 } */
 
-/* .players-on-nav {
+.players-on-nav {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
+    height: 850px;
+    width: 650px;
     transition: transform .2s;
     border-radius: 3px;
 }
 
 .players-on-nav:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     background-color: #C7EAE4;
+}
+
+.players-on-nav-link {
+    position: absolute;
 }
 
 .players-on-nav-link a:link {
@@ -85,7 +91,8 @@
 }
 
 .players-on-nav img {
-    height: 100px;
+    border: 2px solid #104F55;
+    height: 550px;
 }
 
 .players-on-nav img:hover {
@@ -96,6 +103,9 @@
     margin-top: 5px;
     margin-bottom: 5px;
     color: #32746D;
+    opacity: 90%;
+    background: rgb(85,220,255);
+    background: linear-gradient(90deg, rgba(85,220,255,1) 0%, rgba(35,255,204,1) 50%, rgba(0,212,255,1) 100%);
     text-shadow: 0px 0px 2px #0000005a;
-    font-size: large;
-} */
+    font-size: 100px;
+}
