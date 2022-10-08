@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import './TournNav.css';
 
 const TournNav = ({ title, tournaments }) => {
+
     const tournamentList = tournaments.map(tournament => (
         <NavLink to={`/Smash-Tournament/tournaments/${tournament.id}`} key={tournament.id}>
             <li className="navbar-link">

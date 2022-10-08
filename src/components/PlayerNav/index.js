@@ -36,14 +36,16 @@ const PlayerNav = ({ players }) => {
         if (Object.values(player.results).length === 0) return null
 
         return (
-            <Link
-                to={`/Smash-Tournament/players/${player.name}`}
-                key={player.id}>
-                    <p className="players-on-nav">
-                        {player.name}
-                        <img src={player.image} />
-                    </p>
-            </Link>
+            <div className="players-on-nav-link">
+                <Link
+                    to={`/Smash-Tournament/players/${player.name}`}
+                    key={player.id}>
+                        <p className="players-on-nav">
+                            <div>{player.name}</div>
+                            <img src={player.image} />
+                        </p>
+                </Link>
+            </div>
         )
     })
 
