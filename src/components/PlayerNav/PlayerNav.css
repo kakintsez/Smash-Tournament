@@ -39,22 +39,22 @@
 }
 
 .scroll-direction-2 {
-    transform: translate(-35%);
+    transform: translate(-55.7%);
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
 }
 
 .scroll-direction-3 {
-    transform: translate(-70%);
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
-}
-
-.scroll-direction-4 {
     transform: translate(-111%);
     transition-timing-function: ease-in-out;
     transition-duration: 1s;
 }
+
+/* .scroll-direction-4 {
+    transform: translate(-111%);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+} */
 
 .players-on-nav {
     border: 2px solid green;

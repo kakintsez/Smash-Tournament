@@ -5,7 +5,7 @@ import PlayerShow from "../PlayerShow";
 import { sortByRanking } from "../../util/functions";
 
 const PlayerNav = ({ players }) => {
-    const scrollBar = [0,1,2,3]
+    const scrollBar = [0,1,2]
     const [scrollDirection, setScrollDirection] = useState(0);
     // console.log(scrollDirection)
 
@@ -17,7 +17,7 @@ const PlayerNav = ({ players }) => {
 
     const handleScrollClickRight = (e) => {
         e.preventDefault();
-        if (scrollDirection === 3) return;
+        if (scrollDirection === 2) return;
         setScrollDirection(scrollDirection + 1);
     }
 
@@ -28,8 +28,6 @@ const PlayerNav = ({ players }) => {
         playerScrollClass = "scroll-direction-2"
     } else if (scrollBar[scrollDirection] === 2) {
         playerScrollClass = "scroll-direction-3"
-    } else if (scrollBar[scrollDirection] === 3) {
-        playerScrollClass = "scroll-direction-4"
     }
 
     const { rankList} = sortByRanking(players);
