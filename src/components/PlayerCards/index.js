@@ -1,11 +1,10 @@
-import { Route, Link, NavLink, useParams } from "react-router-dom";
+import { Route, Link, NavLink } from "react-router-dom";
 import './PlayerCards.css';
 import { useState } from 'react'
 import PlayerCardShow from "../PlayerCardShow";
 import { sortByRanking } from "../../util/functions";
 
 const PlayerCards = ({ players }) => {
-    const { playerName } = useParams();
     const { rankListActivePlayers } = sortByRanking(players);
     const cardIndexArr = [];
     for (let i = 1; i <= rankListActivePlayers.length; i++) {
@@ -25,15 +24,6 @@ const PlayerCards = ({ players }) => {
         if (cardIndex === cardIndexArr.length) return;
         setCardIndex(cardIndex + 1);
     }
-
-    // debugger
-    // if (playerName) {
-    //     let selectedPlayer = null;
-    //     rankListActivePlayers.forEach(player => {
-    //         selectedPlayer = player
-    //     })
-    //     setCardIndex(selectedPlayer.rank)
-    // }
 
     let playerList = rankListActivePlayers.map(player => {
         let frontCard = null;
@@ -94,7 +84,6 @@ const PlayerCards = ({ players }) => {
         )
     })
 
-    // debugger
     // My work around not using route and switch here since that didn't work for some reason
     // I suspect you can't use a switch nested under another switch
     let renderPlayerCards = null;
@@ -114,23 +103,14 @@ const PlayerCards = ({ players }) => {
 
     return (
         <>
-            {/* <Route path="/Smash-Tournament/players">
-                <div className="players">
-                    <ul className="players-cards">
-                        <button onClick={handleClickLeft} className="left-click">{"<-"}</button>
-                        <div className={`player-card-scroll`}>
-                            {playerList}
-                        </div>
-                        <button onClick={handleClickRight} className="right-click">{"->"}</button>
-                    </ul>
-                </div>
-            </Route> */}
             {renderPlayerCards}
             <Route path="/Smash-Tournament/players/:playerName">
                 <PlayerCardShow
                     players={players}
-                    cardIndex={cardIndex}
-                    setCardIndex={setCardIndex} />
+                    setCardIndex={setCardIndex}
+                    playerList={playerList}
+                    handleClickRight={handleClickRight}
+                    handleClickLeft={handleClickLeft} />
             </Route>
         </>
     )
