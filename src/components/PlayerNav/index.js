@@ -1,13 +1,11 @@
 import { Route, Link, NavLink, useParams } from "react-router-dom";
 import './PlayerNav.css';
 import { useState } from 'react'
-import PlayerShow from "../PlayerShow";
 import { sortByRanking } from "../../util/functions";
 
 const PlayerNav = ({ players }) => {
-    const scrollBar = [0,1]
+    const scrollBar = [0,1,2]
     const [scrollDirection, setScrollDirection] = useState(0);
-    // console.log(scrollDirection)
 
     const handleScrollClickLeft = (e) => {
         e.preventDefault();
@@ -17,7 +15,7 @@ const PlayerNav = ({ players }) => {
 
     const handleScrollClickRight = (e) => {
         e.preventDefault();
-        if (scrollDirection === 1) return;
+        if (scrollDirection === 2) return;
         setScrollDirection(scrollDirection + 1);
     }
 
@@ -26,6 +24,8 @@ const PlayerNav = ({ players }) => {
         playerScrollClass = "scroll-direction-1"
     } else if (scrollBar[scrollDirection] === 1) {
         playerScrollClass = "scroll-direction-2"
+    } else if (scrollBar[scrollDirection] === 2) {
+        playerScrollClass = "scroll-direction-3"
     }
 
     const { rankListActivePlayers } = sortByRanking(players);
@@ -38,10 +38,10 @@ const PlayerNav = ({ players }) => {
                 <Link
                     to={`/Smash-Tournament/players/${player.name}`}
                     key={player.id}>
-                        <p className="players-on-nav">
+                        <div className="players-on-nav">
                             <div>{player.name}</div>
                             <img src={player.image} />
-                        </p>
+                        </div>
                 </Link>
             </div>
         )
@@ -51,11 +51,11 @@ const PlayerNav = ({ players }) => {
         <div className="players">
             {/* <h4>Sort Option Coming Soon</h4> */}
             <ul className="players-nav">
-                <button onClick={handleScrollClickLeft} className="left-scroll">{"<-"}</button>
+                <button onClick={handleScrollClickLeft} className="left-scroll">{"<"}</button>
                 <div className={`player-nav-scroll ${playerScrollClass}`}>
                     {playerList}
                 </div>
-                <button onClick={handleScrollClickRight} className="right-scroll">{"->"}</button>
+                <button onClick={handleScrollClickRight} className="right-scroll">{">"}</button>
             </ul>
         </div>
     )

@@ -1,12 +1,14 @@
+.players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .players-cards {
     /* border: 2px solid #104F55; */
     padding-left: 10px;
     padding-right: 10px;
-    /* min-width: 700px; */
-    /* max-width: 1302px; */
-    /* width: 90%; */
     width: 900px;
-    /* overflow-x: hidden; */
     position: relative;
     /* background-color: #32746D; */
     border-radius: 5px;
@@ -22,50 +24,38 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 120px;
+    top: 130px;
 }
 
 .left-click {
     position: absolute;
-    top: 500px;
-    left: -70px;
+    top: 350px;
+    left: -60px;
+    font-size: 20px;
+    width: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    border: 0;
+    border-radius: 100px;
     z-index: 3;
     cursor: pointer;
 }
 
 .right-click {
     position: absolute;
-    top: 500px;
-    right: 310px;
+    top: 350px;
+    right: 350px;
+    font-size: 20px;
+    width: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    border: 0;
+    border-radius: 100px;
     z-index: 3;
     cursor: pointer;
 }
 
-/* .scroll-direction-1 {
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
-} */
-
-/* .scroll-direction-2 {
-    transform: translate(-62.6%);
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
-} */
-
-/* .scroll-direction-3 {
-    transform: translate(-137.7%);
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
-} */
-
-/* .scroll-direction-4 {
-    transform: translate(-180%);
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
-} */
-
 .players-on-cards {
     position: absolute;
+    /* top: -100px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,8 +63,8 @@
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 700px;
-    width: 500px;
+    height: 675px;
+    width: 475px;
     transition: transform .2s;
     border-radius: 3px;
 }
@@ -85,7 +75,8 @@
 }
 
 .players-on-cards-link {
-    /* position: absolute; */
+    position: relative;
+    top: -85px;
 }
 
 .players-on-cards-link a:link {
@@ -94,8 +85,9 @@
 }
 
 .players-on-cards img {
+    background-color: #104F55;
     border: 8px solid #32746D;
-    height: 400px;
+    height: 375px;
 }
 
 .players-on-cards div {
@@ -118,31 +110,28 @@
     background: rgb(85,220,255);
     background: linear-gradient(90deg, rgba(85,220,255,1) 0%, rgba(35,255,204,1) 50%, rgba(0,212,255,1) 100%);
     text-shadow: 0px 0px 2px #0000005a;
-    font-size: 100px;
+    font-size: 60px;
 }
 
 .second-card {
     position: absolute;
-    left: -6px;
-    top: -5px;
+    transform: rotate(-0.3deg);
+    left: -13.5px;
+    top: -11.3px;
     z-index: -2;
 }
 
 .third-card {
     position: absolute;
-    left: -6px;
-    top: -16px;
+    left: -9px;
+    top: -109px;
+    transform: rotate(-1deg);
     border: 10px solid #32746D;
-    /* padding-left: 10px;
-    padding-right: 10px;
-    width: 900px;
-    position: relative;
-    border-radius: 5px; */
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 700px;
-    width: 500px;
+    height: 675px;
+    width: 475px;
     transition: transform .2s;
     border-radius: 3px;
     z-index: -3;
@@ -150,19 +139,15 @@
 
 .fourth-card {
     position: absolute;
-    left: -20px;
-    top: -26px;
+    left: -21px;
+    top: -121px;
+    transform: rotate(-1.5deg);
     border: 10px solid #32746D;
-    /* padding-left: 10px;
-    padding-right: 10px;
-    width: 900px;
-    position: relative;
-    border-radius: 5px; */
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 700px;
-    width: 500px;
+    height: 675px;
+    width: 475px;
     transition: transform .2s;
     border-radius: 3px;
     z-index: -4;

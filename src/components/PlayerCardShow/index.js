@@ -21,11 +21,11 @@ const PlayerCardShow = ({ players, setCardIndex, playerList, handleClickRight, h
     return (
         <div className="players">
             <ul className="players-cards">
-                <button onClick={handleClickLeft} className="left-click">{"<-"}</button>
+                <button onClick={handleClickLeft} className="left-click">{"<"}</button>
                 <div className={`player-card-scroll`}>
                     {playerList}
                 </div>
-                <button onClick={handleClickRight} className="right-click">{"->"}</button>
+                <button onClick={handleClickRight} className="right-click">{">"}</button>
             </ul>
             <Route path="/Smash-Tournament/players/:playerName">
                 <PlayerShow players={players} />

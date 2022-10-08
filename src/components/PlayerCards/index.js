@@ -63,13 +63,11 @@ const PlayerCards = ({ players }) => {
         } else if (cardIndex === player.rank-2) {
             thirdCard = (
                 <div className="third-card">
-                    hi
                 </div>
             )
         } else if (cardIndex === player.rank-3) {
             fourthCard = (
                 <div className="fourth-card">
-                    hi
                 </div>
             )
         }
@@ -91,11 +89,11 @@ const PlayerCards = ({ players }) => {
         renderPlayerCards = (
             <div className="players">
                 <ul className="players-cards">
-                    <button onClick={handleClickLeft} className="left-click">{"<-"}</button>
+                    <button onClick={handleClickLeft} className="left-click">{"<"}</button>
                     <div className={`player-card-scroll`}>
                         {playerList}
                     </div>
-                    <button onClick={handleClickRight} className="right-click">{"->"}</button>
+                    <button onClick={handleClickRight} className="right-click">{">"}</button>
                 </ul>
             </div>
         )
@@ -103,7 +101,9 @@ const PlayerCards = ({ players }) => {
 
     return (
         <>
-            {renderPlayerCards}
+            <Route path="/Smash-Tournament/players" exact>
+                {renderPlayerCards}
+            </Route>
             <Route path="/Smash-Tournament/players/:playerName">
                 <PlayerCardShow
                     players={players}
