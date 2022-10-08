@@ -30,9 +30,9 @@ const PlayerNav = ({ players }) => {
         playerScrollClass = "scroll-direction-3"
     }
 
-    const { rankList} = sortByRanking(players);
+    const { rankListActivePlayers } = sortByRanking(players);
 
-    let playerList = rankList.map(player => {
+    let playerList = rankListActivePlayers.map(player => {
         if (Object.values(player.results).length === 0) return null
 
         return (
@@ -59,9 +59,6 @@ const PlayerNav = ({ players }) => {
                 </div>
                 <button onClick={handleScrollClickRight} className="right-scroll">{"->"}</button>
             </ul>
-            <Route path="/Smash-Tournament/players/:playerName">
-                <PlayerShow players={players} />
-            </Route>
         </div>
     )
 }

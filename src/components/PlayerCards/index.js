@@ -1,10 +1,11 @@
 import { Route, Link, NavLink, useParams } from "react-router-dom";
-import './PlayerNavBetter.css';
+import './PlayerCards.css';
 import { useState } from 'react'
 import PlayerShow from "../PlayerShow";
 import { sortByRanking } from "../../util/functions";
 
-const PlayerNavBetter = ({ players }) => {
+const PlayerCards = ({ players }) => {
+    // const { playerName } = useParams();
     const { rankListActivePlayers } = sortByRanking(players);
     const cardIndexArr = [];
     for (let i = 1; i <= rankListActivePlayers.length; i++) {
@@ -25,13 +26,13 @@ const PlayerNavBetter = ({ players }) => {
         setCardIndex(cardIndex + 1);
     }
 
-    let playerScrollClass = null;
-    // if (scrollBar[cardIndex] === 0) {
-    //     playerScrollClass = "scroll-direction-1"
-    // } else if (scrollBar[cardIndex] === 1) {
-    //     playerScrollClass = "scroll-direction-2"
-    // } else if (scrollBar[cardIndex] === 2) {
-    //     playerScrollClass = "scroll-direction-3"
+    // debugger
+    // if (playerName) {
+    //     let selectedPlayer = null;
+    //     rankListActivePlayers.forEach(player => {
+    //         selectedPlayer = player
+    //     })
+    //     setCardIndex(selectedPlayer.rank)
     // }
 
     let playerList = rankListActivePlayers.map(player => {
@@ -41,13 +42,15 @@ const PlayerNavBetter = ({ players }) => {
         let fourthCard = null;
         if (cardIndex === player.rank) {
             frontCard = (
-                <div className="players-on-nav-link">
+                <div className="players-on-cards-link">
                     <Link
                         to={`/Smash-Tournament/players/${player.name}`}
                         key={player.id}>
-                            <p className="players-on-nav">
-                                <div>{player.name}</div>
-                                <img src={player.image} />
+                            <p className="players-on-cards">
+                                <div>
+                                    <div className="card-title">{player.name}</div>
+                                    <img src={player.image} />
+                                </div>
                             </p>
                     </Link>
                 </div>
@@ -55,11 +58,11 @@ const PlayerNavBetter = ({ players }) => {
         } else if (cardIndex === player.rank-1) {
             secondCard = (
                 <div className="second-card">
-                    <div className="players-on-nav-link">
+                    <div className="players-on-cards-link">
                         <Link
                             to={`/Smash-Tournament/players/${player.name}`}
                             key={player.id}>
-                                <p className="players-on-nav">
+                                <p className="players-on-cards">
                                     <div>{player.name}</div>
                                     <img src={player.image} />
                                 </p>
@@ -93,13 +96,12 @@ const PlayerNavBetter = ({ players }) => {
 
     return (
         <div className="players">
-            <h4>Sort Option Coming Soon</h4>
-            <ul className="players-nav">
-                <button onClick={handleClickLeft} className="left-scroll">{"<-"}</button>
-                <div className={`player-nav-scroll ${playerScrollClass}`}>
+            <ul className="players-cards">
+                <button onClick={handleClickLeft} className="left-click">{"<-"}</button>
+                <div className={`player-card-scroll`}>
                     {playerList}
                 </div>
-                <button onClick={handleClickRight} className="right-scroll">{"->"}</button>
+                <button onClick={handleClickRight} className="right-click">{"->"}</button>
             </ul>
             <Route path="/Smash-Tournament/players/:playerName">
                 <PlayerShow players={players} />
@@ -108,4 +110,4 @@ const PlayerNavBetter = ({ players }) => {
     )
 }
 
-export default PlayerNavBetter;
+export default PlayerCards;
