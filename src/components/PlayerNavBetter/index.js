@@ -36,8 +36,9 @@ const PlayerNavBetter = ({ players }) => {
 
     let playerList = rankListActivePlayers.map(player => {
         let frontCard = null;
-        // let nextCard = null;
-        let otherCard = null;
+        let secondCard = null;
+        let thirdCard = null;
+        let fourthCard = null;
         if (cardIndex === player.rank) {
             frontCard = (
                 <div className="players-on-nav-link">
@@ -51,10 +52,31 @@ const PlayerNavBetter = ({ players }) => {
                     </Link>
                 </div>
             )
-        } else {
-            otherCard = (
-                <div className="other-card">
-                    
+        } else if (cardIndex === player.rank-1) {
+            secondCard = (
+                <div className="second-card">
+                    <div className="players-on-nav-link">
+                        <Link
+                            to={`/Smash-Tournament/players/${player.name}`}
+                            key={player.id}>
+                                <p className="players-on-nav">
+                                    <div>{player.name}</div>
+                                    <img src={player.image} />
+                                </p>
+                        </Link>
+                    </div>
+                </div>
+            )
+        } else if (cardIndex === player.rank-2) {
+            thirdCard = (
+                <div className="third-card">
+                    hi
+                </div>
+            )
+        } else if (cardIndex === player.rank-3) {
+            fourthCard = (
+                <div className="fourth-card">
+                    hi
                 </div>
             )
         }
@@ -62,7 +84,9 @@ const PlayerNavBetter = ({ players }) => {
         return (
             <div className="all-player-cards">
                 <span>{frontCard}</span>
-                <span>{otherCard}</span>
+                <span>{secondCard}</span>
+                <span>{thirdCard}</span>
+                <span>{fourthCard}</span>
             </div>
         )
     })

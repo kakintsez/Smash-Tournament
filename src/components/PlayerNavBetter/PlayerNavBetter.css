@@ -27,6 +27,8 @@
 .player-nav-scroll {
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: 120px;
 }
 
 .left-scroll {
@@ -108,4 +110,49 @@
     background: linear-gradient(90deg, rgba(85,220,255,1) 0%, rgba(35,255,204,1) 50%, rgba(0,212,255,1) 100%);
     text-shadow: 0px 0px 2px #0000005a;
     font-size: 100px;
+}
+
+.second-card {
+    position: absolute;
+    left: -6px;
+    top: -5px;
+    z-index: -2;
+}
+
+.third-card {
+    position: absolute;
+    left: -6px;
+    top: -16px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    width: 900px;
+    position: relative;
+    border-radius: 5px; */
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    background-color: #A7E8BD;
+    padding: 3px;
+    height: 850px;
+    width: 650px;
+    transition: transform .2s;
+    border-radius: 3px;
+    z-index: -3;
+}
+
+.fourth-card {
+    position: absolute;
+    left: -20px;
+    top: -26px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    width: 900px;
+    position: relative;
+    border-radius: 5px; */
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    background-color: #A7E8BD;
+    padding: 3px;
+    height: 850px;
+    width: 650px;
+    transition: transform .2s;
+    border-radius: 3px;
+    z-index: -4;
 }
