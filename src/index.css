@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     transform: translateX(-290px);
+    background-color: #EBF6FE;
 }
 
 .main-app {
@@ -41,12 +42,12 @@
 }
 
 .side-bar-line {
-    border: 20px solid rgb(92, 145, 0);
+    border: 20px solid #104F55;
     z-index: 7;
 }
 
 .navbar-whole {
     width: 300px;
-    background-color: white;
+    background-color: #EBF6FE;
     z-index: 4;
 }

@@ -7,13 +7,19 @@
 }
 
 .navbar-link {
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+    background-color: #A7E8BD;
     padding: 3px;
-    border: 2px solid green;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+    margin: 5px;
     transition: transform .2s;
 }
 
 .navbar-link:hover {
     transform: scale(1.07);
+    background-color: #C7EAE4;
 }
 
 .navbar-buttons {
@@ -30,5 +36,5 @@
 .top-logo {
     display: flex;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color: #A7E8BD;
 }
