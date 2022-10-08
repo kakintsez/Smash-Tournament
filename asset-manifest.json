@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Smash-Tournament/static/css/main.4a49aef2.css",
-    "main.js": "/Smash-Tournament/static/js/main.fc9fadb5.js",
+    "main.css": "/Smash-Tournament/static/css/main.2d5a15ed.css",
+    "main.js": "/Smash-Tournament/static/js/main.7c961128.js",
     "index.html": "/Smash-Tournament/index.html",
-    "main.4a49aef2.css.map": "/Smash-Tournament/static/css/main.4a49aef2.css.map",
-    "main.fc9fadb5.js.map": "/Smash-Tournament/static/js/main.fc9fadb5.js.map"
+    "main.2d5a15ed.css.map": "/Smash-Tournament/static/css/main.2d5a15ed.css.map",
+    "main.7c961128.js.map": "/Smash-Tournament/static/js/main.7c961128.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a49aef2.css",
-    "static/js/main.fc9fadb5.js"
+    "static/css/main.2d5a15ed.css",
+    "static/js/main.7c961128.js"
   ]
 }
