@@ -21,7 +21,7 @@ const PlayerNavBetter = ({ players }) => {
 
     const handleClickRight = (e) => {
         e.preventDefault();
-        if (cardIndex === players.length) return;
+        if (cardIndex === cardIndexArr.length) return;
         setCardIndex(cardIndex + 1);
     }
 

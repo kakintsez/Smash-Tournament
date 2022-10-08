@@ -3,3 +3,11 @@
     flex-direction: column;
     align-items: center;
 } */
+
+.player-show-info {
+    margin-left: 900px;
+}
+
+.player-show-info img {
+    height: 400px;
+}

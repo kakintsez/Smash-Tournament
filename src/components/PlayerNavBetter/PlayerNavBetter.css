@@ -33,16 +33,16 @@
 
 .left-scroll {
     position: absolute;
-    top: 55px;
-    left: 5px;
-    z-index: 8;
+    top: 500px;
+    left: -70px;
+    z-index: 3;
 }
 
 .right-scroll {
     position: absolute;
-    top: 55px;
-    right: 5px;
-    z-index: 8;
+    top: 500px;
+    right: 265px;
+    z-index: 3;
 }
 
 /* .scroll-direction-1 {
@@ -69,11 +69,16 @@
 } */
 
 .players-on-nav {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #32746D;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 850px;
-    width: 650px;
+    height: 750px;
+    width: 550px;
     transition: transform .2s;
     border-radius: 3px;
 }
@@ -84,7 +89,7 @@
 }
 
 .players-on-nav-link {
-    position: absolute;
+    /* position: absolute; */
 }
 
 .players-on-nav-link a:link {
@@ -93,8 +98,8 @@
 }
 
 .players-on-nav img {
-    border: 2px solid #104F55;
-    height: 550px;
+    border: 8px solid #32746D;
+    height: 450px;
 }
 
 .players-on-nav img:hover {
@@ -103,9 +108,11 @@
 
 .players-on-nav div {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #32746D;
+    width: 95%;
     opacity: 90%;
+    border: 8px solid #32746D;
     background: rgb(85,220,255);
     background: linear-gradient(90deg, rgba(85,220,255,1) 0%, rgba(35,255,204,1) 50%, rgba(0,212,255,1) 100%);
     text-shadow: 0px 0px 2px #0000005a;
@@ -123,6 +130,7 @@
     position: absolute;
     left: -6px;
     top: -16px;
+    border: 10px solid #32746D;
     /* padding-left: 10px;
     padding-right: 10px;
     width: 900px;
@@ -131,8 +139,8 @@
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 850px;
-    width: 650px;
+    height: 750px;
+    width: 550px;
     transition: transform .2s;
     border-radius: 3px;
     z-index: -3;
@@ -142,6 +150,7 @@
     position: absolute;
     left: -20px;
     top: -26px;
+    border: 10px solid #32746D;
     /* padding-left: 10px;
     padding-right: 10px;
     width: 900px;
@@ -150,8 +159,8 @@
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
     background-color: #A7E8BD;
     padding: 3px;
-    height: 850px;
-    width: 650px;
+    height: 750px;
+    width: 550px;
     transition: transform .2s;
     border-radius: 3px;
     z-index: -4;
