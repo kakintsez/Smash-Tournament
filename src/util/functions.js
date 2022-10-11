@@ -19,8 +19,9 @@ export const findPlayers = (tournament) => {
 
 // Get all the players that you won/lost to in this tournament in an array
 export const findMatchResults = (result) => {
-    let wins = result.wins.map(id => players[id].name)
-    let losses = result.losses.map(id => players[id].name)
+    // debugger
+    let wins = result.wins.map(id => players[id-1].name)
+    let losses = result.losses.map(id => players[id-1].name)
 
     return { wins, losses }
 }
