@@ -44,7 +44,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 1,
             "characters": ["Pikachu", "Pokemon Trainer", "Wolf"],
-            "image": "https://i.imgur.com/25bEgqD.png",
+            "showImage": "https://i.imgur.com/25bEgqD.png",
+            "cardImage": "https://i.imgur.com/iujET8y.png",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -66,7 +68,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 2,
             "characters": ["Link", "Lucina", "Ganondorf"],
-            "image": "https://i.imgur.com/vH9SHYA.png",
+            "showImage": "https://i.imgur.com/vH9SHYA.png",
+            "cardImage": "https://i.imgur.com/Vc98DRF.png",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -88,7 +92,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 3,
             "characters": ["Lucina", "Zero Suit Samus", "Wolf"],
-            "image": "https://i.imgur.com/RKAMDkW.png",
+            "showImage": "https://i.imgur.com/RKAMDkW.png",
+            "cardImage": "https://i.imgur.com/A9FyOdx.png",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -104,7 +110,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 4,
             "characters": ["Pyra & Mythra", "Joker", "Shulk"],
-            "image": "https://i.imgur.com/osHze6E.png",
+            "showImage": "https://i.imgur.com/osHze6E.png",
+            "cardImage": "https://i.imgur.com/iTvstrD.png",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -126,7 +134,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 5,
             "characters": ["Zelda"],
-            "image": "https://i.imgur.com/9e5dVbw.png",
+            "showImage": "https://i.imgur.com/9e5dVbw.png",
+            "cardImage": "https://i.imgur.com/dmnJO7P.png",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -142,7 +152,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 6,
             "characters": ["Pikachu", "Lucina"],
-            "image": "https://i.imgur.com/RkeJQXi.png",
+            "showImage": "https://i.imgur.com/RkeJQXi.png",
+            "cardImage": "https://i.imgur.com/xhcQNKp.png",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -158,7 +170,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 7,
             "characters": ["Lucas", "Lucina"],
-            "image": "https://i.imgur.com/yzBaaeg.png",
+            "showImage": "https://i.imgur.com/yzBaaeg.png",
+            "cardImage": "https://i.imgur.com/vhKm6hg.png",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -180,7 +194,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 13,
             "characters": ["Samus", "Greninja", "Sheik"],
-            "image": "https://i.imgur.com/jZBzkF5.png",
+            "showImage": "https://i.imgur.com/jZBzkF5.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -196,7 +212,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 8,
             "characters": ["Wolf", "Joker"],
-            "image": "https://i.imgur.com/PyRWucH.png",
+            "showImage": "https://i.imgur.com/PyRWucH.png",
+            "cardImage": "https://i.imgur.com/hhMvMuf.png",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -212,7 +230,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 9,
             "characters": ["Captain Falcon"],
-            "image": "https://i.imgur.com/fSSqRPT.png",
+            "showImage": "https://i.imgur.com/fSSqRPT.png",
+            "cardImage": "https://i.imgur.com/bc1XOLT.png",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -228,7 +248,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 20,
             "characters": ["???"],
-            "image": "",
+            "showImage": "",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -237,7 +259,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 21,
             "characters": ["Terry", "Cloud"],
-            "image": "https://i.imgur.com/VzDx0Io.png",
+            "showImage": "https://i.imgur.com/VzDx0Io.png",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -246,7 +270,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 22,
             "characters": ["Link", "Snake", "Villager", "Falco"],
-            "image": "https://i.imgur.com/ThleBHZ.png",
+            "showImage": "https://i.imgur.com/ThleBHZ.png",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -255,7 +281,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 10,
             "characters": ["Donkey Kong", "Ness", "Inkling", "Link"],
-            "image": "https://i.imgur.com/6EPKBNO.png",
+            "showImage": "https://i.imgur.com/6EPKBNO.png",
+            "cardImage": "https://i.imgur.com/ENSan7Z.png",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -277,7 +305,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 12,
             "characters": ["Bowser", "Snake"],
-            "image": "https://i.imgur.com/VmqtuIP.png",
+            "showImage": "https://i.imgur.com/VmqtuIP.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -299,7 +329,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 11,
             "characters": ["Fox", "Ness"],
-            "image": "https://i.imgur.com/6ewewLz.png",
+            "showImage": "https://i.imgur.com/6ewewLz.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -315,7 +347,9 @@ const smashObject = {
             "attendance": "100%",
             "rank": 14,
             "characters": ["Samus", "Byleth", "Kirby"],
-            "image": "https://i.imgur.com/SOmWK5H.png",
+            "showImage": "https://i.imgur.com/SOmWK5H.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -337,7 +371,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 15,
             "characters": ["Kazuya", "Luigi"],
-            "image": "https://i.imgur.com/CQJgsuz.png",
+            "showImage": "https://i.imgur.com/CQJgsuz.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -353,7 +389,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 16,
             "characters": ["ROB", "Lucas", "Pikachu"],
-            "image": "https://i.imgur.com/8EWiWXp.png",
+            "showImage": "https://i.imgur.com/8EWiWXp.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -369,7 +407,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 17,
             "characters": ["Palutena"],
-            "image": "https://i.imgur.com/ZjsAgdV.png",
+            "showImage": "https://i.imgur.com/ZjsAgdV.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 2: {
                     "tournamentId": 2,
@@ -385,7 +425,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 18,
             "characters": ["Sephiroth", "Pyra & Mythra"],
-            "image": "https://i.imgur.com/rPyV1ez.png",
+            "showImage": "https://i.imgur.com/rPyV1ez.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -401,7 +443,9 @@ const smashObject = {
             "attendance": "50%",
             "rank": 19,
             "characters": ["Ness"],
-            "image": "https://i.imgur.com/hS9jJfJ.png",
+            "showImage": "https://i.imgur.com/hS9jJfJ.png",
+            "cardImage": "",
+            "extra": "",
             "results": {
                 1: {
                     "tournamentId": 1,
@@ -417,7 +461,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 23,
             "characters": ["Shulk"],
-            "image": "",
+            "showImage": "",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -426,7 +472,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 24,
             "characters": ["Cloud"],
-            "image": "https://i.imgur.com/3iUW9qz.png",
+            "showImage": "https://i.imgur.com/3iUW9qz.png",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -435,7 +483,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 25,
             "characters": ["Ness"],
-            "image": "",
+            "showImage": "",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -444,7 +494,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 26,
             "characters": ["Ridley, Pichu"],
-            "image": "",
+            "showImage": "",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
         {
@@ -453,7 +505,9 @@ const smashObject = {
             "attendance": "0%",
             "rank": 27,
             "characters": ["Captain Falcon"],
-            "image": "",
+            "showImage": "",
+            "cardImage": "",
+            "extra": "",
             "results": {}
         },
     ]

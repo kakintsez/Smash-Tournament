@@ -40,7 +40,7 @@ const PlayerNav = ({ players }) => {
                     key={player.id}>
                         <div className="players-on-nav">
                             <div>{player.name}</div>
-                            <img src={player.image} />
+                            <img src={player.showImage} />
                         </div>
                 </Link>
             </div>

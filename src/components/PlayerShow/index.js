@@ -31,7 +31,7 @@ const PlayerShow = ({ players }) => {
             <h2>{selectedPlayer.name}</h2>
             <p>Rank: {selectedPlayer.rank}</p>
             <p>Characters: {selectedPlayer.characters.join(", ")}</p>
-            <img src={selectedPlayer.image} />
+            <img src={selectedPlayer.showImage} />
             <p>Attendance: {selectedPlayer.attendance}</p>
             <ul>Results: {results}</ul>
         </div>

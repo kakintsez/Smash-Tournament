@@ -39,7 +39,7 @@ const PlayerCards = ({ players }) => {
                             <p className="players-on-cards">
                                 <div>
                                     <div className="card-title">{player.name}</div>
-                                    <img src={player.image} />
+                                    <img src={player.cardImage} />
                                 </div>
                             </p>
                     </Link>
@@ -54,7 +54,7 @@ const PlayerCards = ({ players }) => {
                             key={player.id}>
                                 <p className="players-on-cards">
                                     <div>{player.name}</div>
-                                    <img src={player.image} />
+                                    <img src={player.showImage} />
                                 </p>
                         </Link>
                     </div>
