@@ -44,7 +44,7 @@ const smashObject = {
             "attendance": "100%",
             "rank": 1,
             "characters": ["Pikachu", "Pokemon Trainer", "Wolf"],
-            "showImage": "https://i.imgur.com/25bEgqD.png",
+            "showImage": "https://i.imgur.com/tZ9SDY6.png",
             "cardImage": "https://i.imgur.com/iujET8y.png",
             "extra": "",
             "results": {
@@ -195,7 +195,7 @@ const smashObject = {
             "rank": 13,
             "characters": ["Samus", "Greninja", "Sheik"],
             "showImage": "https://i.imgur.com/jZBzkF5.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/P8gwqPM.png",
             "extra": "",
             "results": {
                 2: {
@@ -306,7 +306,7 @@ const smashObject = {
             "rank": 12,
             "characters": ["Bowser", "Snake"],
             "showImage": "https://i.imgur.com/VmqtuIP.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/YVdkzNw.png",
             "extra": "",
             "results": {
                 1: {
@@ -330,7 +330,7 @@ const smashObject = {
             "rank": 11,
             "characters": ["Fox", "Ness"],
             "showImage": "https://i.imgur.com/6ewewLz.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/pUIe5yK.png",
             "extra": "",
             "results": {
                 1: {
@@ -348,7 +348,7 @@ const smashObject = {
             "rank": 14,
             "characters": ["Samus", "Byleth", "Kirby"],
             "showImage": "https://i.imgur.com/SOmWK5H.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/UqZXgJ4.png",
             "extra": "",
             "results": {
                 1: {
@@ -371,8 +371,8 @@ const smashObject = {
             "attendance": "50%",
             "rank": 15,
             "characters": ["Kazuya", "Luigi"],
-            "showImage": "https://i.imgur.com/CQJgsuz.png",
-            "cardImage": "",
+            "showImage": "https://i.imgur.com/dMwnqp1.png",
+            "cardImage": "https://i.imgur.com/3Xckc7g.png",
             "extra": "",
             "results": {
                 1: {
@@ -390,7 +390,7 @@ const smashObject = {
             "rank": 16,
             "characters": ["ROB", "Lucas", "Pikachu"],
             "showImage": "https://i.imgur.com/8EWiWXp.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/3WuwnIi.png",
             "extra": "",
             "results": {
                 2: {
@@ -403,12 +403,12 @@ const smashObject = {
         },
         {
             "id": 20,
-            "name": "Brian",
+            "name": "Brian L",
             "attendance": "50%",
             "rank": 17,
             "characters": ["Palutena"],
             "showImage": "https://i.imgur.com/ZjsAgdV.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/GNuIbm4.png",
             "extra": "",
             "results": {
                 2: {
@@ -426,7 +426,7 @@ const smashObject = {
             "rank": 18,
             "characters": ["Sephiroth", "Pyra & Mythra"],
             "showImage": "https://i.imgur.com/rPyV1ez.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/CW7o4dS.png",
             "extra": "",
             "results": {
                 1: {
@@ -444,7 +444,7 @@ const smashObject = {
             "rank": 19,
             "characters": ["Ness"],
             "showImage": "https://i.imgur.com/hS9jJfJ.png",
-            "cardImage": "",
+            "cardImage": "https://i.imgur.com/tWeLmY7.png",
             "extra": "",
             "results": {
                 1: {
